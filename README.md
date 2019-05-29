@@ -35,7 +35,7 @@ jupyter notebook
 To display as a slideshow:
 
 ```
-jupyter nbconvert 'Dockerized Django Developemnt.ipynb' --to slides --post serve
+jupyter nbconvert --to slides  --ServePostProcessor.port=8001 --ServerPostProcessor.ip='*' --post serve *.ipynb
 ```
 
 ## Good Resources To Learn More
